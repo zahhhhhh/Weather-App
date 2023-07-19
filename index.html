@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather app</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form id="search-form">
+        <div class="row">
+          <div class="col-9">
+            <input
+              type="search"
+              placeholder="Enter a city"
+              class="search"
+              id="city-input"
+            />
+          </div>
+          <div class="col-2">
+            <input type="submit" value="Search" class="button" />
+          </div>
+        </div>
+      </form>
+      <div class="current-weather-wrapper">
+        <div class="row">
+          <div class="col-1">
+            <img
+              alt="current weather icon"
+              class="current-weather-icon"
+              id="current-weather-icon"
+            />
+          </div>
+          <div class="col-5 current-weather-info-wrapper">
+            <h1 id="city"></h1>
+            <ul>
+              <li id="date"></li>
+              <li
+                class="temperature-description"
+                id="temperature-description"
+              ></li>
+            </ul>
+          </div>
+          <div class="col-2">
+            <h2 class="degrees" id="temperature"></h2>
+          </div>
+          <div class="col- current-weather-info-wrapper">
+            <h3 class="units">°C</h3>
+            <ul>
+              <li>Humidity: <span id="humidity"></span>%</li>
+              <li>Wind: <span id="wind"></span>km/h</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="weather-forecast" id="forecast"></div>
+    </div>
+
+    <script src="src/app.js"></script>
+  </body>
+</html>
