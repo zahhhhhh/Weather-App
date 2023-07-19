@@ -45,7 +45,7 @@ hr {
 }
 
 .container {
-  margin-top: 10em;
+  margin-top: 5em;
   width: 700px;
   padding: 40px;
   background: rgba(255, 255, 255, 0.2);
@@ -61,14 +61,10 @@ hr {
   height: 52px;
   border: solid 1px;
   border-color: #060606;
-  border-radius: 50px;
+  border-radius: 10px;
   padding-left: 20px;
   margin-bottom: 40px;
-  background: linear-gradient(
-    109.6deg,
-    rgb(220, 196, 252) 11.2%,
-    rgb(150, 199, 253) 100.2%
-  );
+  background: rgb(187, 220, 255);
 }
 
 .search:hover {
